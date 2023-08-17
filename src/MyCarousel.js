@@ -19,6 +19,8 @@ const MyCarousel = ({ images }) => {
                 showThumbs={false}
                 centerMode={true}
                 centerSlidePercentage={40}
+                autoPlay={true}
+                infiniteLoop={true}
             >
                 {carouselItems}
             </Carousel>
