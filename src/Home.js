@@ -13,10 +13,7 @@ const Home = () => {
         {
             key: 'image3',
             value: 'assets/images/Picture 3.png',
-        }
-    ];
-
-    const images2 = [
+        },
         {
             key: 'image4',
             value: 'assets/images/Picture 4.png',
@@ -25,9 +22,28 @@ const Home = () => {
             key: 'image5',
             value: 'assets/images/Picture 5.png',
         },
+    ];
+
+    const images2 = [
         {
             key: 'image6',
             value: 'assets/images/Picture 6.png',
+        },
+        {
+            key: 'image7',
+            value: 'assets/images/Picture 7.png',
+        },
+        {
+            key: 'image8',
+            value: 'assets/images/Picture 8.png',
+        },
+        {
+            key: 'image9',
+            value: 'assets/images/Picture 9.png',
+        },
+        {
+            key: 'image10',
+            value: 'assets/images/Picture 10.png',
         }
     ];
 
