@@ -3,11 +3,11 @@ const Footer = () => {
         <div className="footer">
             <footer>
                 <div class="socialMedia">
-                    <img src="Asset/Line.png" alt="" />
-                    <img src="Asset/Facebook.png" alt="" />
-                    <img src="Asset/twitter.png" alt="" />
-                    <img src="Asset/Instagram.png" alt="" />
-                    <img src="Asset/Whatsapp.png" alt="" />
+                    <img src="assets/images/Line.png" alt="" />
+                    <img src="assets/images/Facebook.png" alt="" />
+                    <img src="assets/images/Twitter.png" alt="" />
+                    <img src="assets/images/Instagram.png" alt="" />
+                    <img src="assets/images/Whatsapp (1).png" alt="" />
                 </div>
                 <img src="Asset/Logo2.png" alt="" class="Logo2" />
 
