@@ -150,6 +150,51 @@ a {
     text-align: justify;
   }
 
+/* last Container */
+.last-container{
+  background-color: #448498;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  color: whitesmoke;
+}
+
+
+.gallery{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  overflow: auto;
+  scroll-snap-type: mandatory;
+}
+
+.gallery img{
+  width: 336px;
+  height: 350px;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+} 
+.last-container h2{
+  font-weight: 700px;
+  font-size: 36px;
+}
+.last-container p{
+    text-align: justify;
+    font-size: 23px;
+    font-weight: 700px;
+    margin: 30px;
+}
+.wave{
+  background-color: #448498;
+}
+
+.wave img{
+  width: 100%;
+}
 /* footer */
   footer {
     background-image: url("Asset/Footer.png");
