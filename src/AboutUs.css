@@ -55,7 +55,7 @@ a {
     color: white;
     justify-content: center;
     align-items: center;
-    margin: 100px;
+    padding: 100px;
     gap: 60px;
   }
 
@@ -73,7 +73,16 @@ a {
     font-weight: 700px;
     padding-top: 60px;
   }
+/* mid-content */
 
+ .stickyBanner{
+    background-color: #448498;
+    position: sticky;
+    top: 0;
+ }
+ .stickyBanner img{
+  width: 100%;
+ }
   .mid-container{
     display: flex;
     flex-direction: column;
@@ -141,7 +150,7 @@ a {
     text-align: justify;
   }
 
-
+/* footer */
   footer {
     background-image: url("Asset/Footer.png");
     display: flex;
