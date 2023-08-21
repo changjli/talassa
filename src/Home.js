@@ -49,6 +49,23 @@ const Home = () => {
 
     return (
         <div className="home">
+            <div className="header">
+                <div class="left-content">
+                    <div class="title">
+                        <h1>Taste</h1>
+                        <span>And</span>
+                        <h1>Feels</h1>
+                        <p>The Fresh Food</p>
+                    </div>
+                    <div class="button">
+                        <div class="reserv btn">Reservation</div>
+                        <div class="details btn">See More</div>
+                    </div>
+                </div>
+                <div class="right-content">
+                    <img src="./Assets/Logo.png" alt="" />
+                </div>
+            </div>
             <div className="body">
                 <div className="card">
                     <img src="assets/images/Pict location 4.png" alt="" />
