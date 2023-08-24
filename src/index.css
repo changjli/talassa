@@ -15,6 +15,7 @@ body {
 
 /* grid */
 .container {
+  position: relative;
   max-width: 1440px;
   margin: 0 auto;
   padding: 0;
@@ -30,13 +31,15 @@ body {
 }
 
 /* home header */
-.header {
+.home .header {
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  background-image: url('Asset/Homepage.svg');
+  padding-bottom: 10%;
 }
 
 .header .left-content {
-  /* background-color: aquamarine; */
   margin-top: 13%;
   width: 40%;
   color: rgb(255, 255, 255);
@@ -44,6 +47,7 @@ body {
 
 .header .title {
   position: relative;
+  text-align: left;
 }
 
 .header .title h1 {
@@ -53,7 +57,7 @@ body {
   line-height: 0.9;
 }
 
-.header .header .title span {
+.header .title span {
   position: absolute;
   top: 25%;
   left: 10%;
@@ -122,6 +126,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-flow: wrap;
   align-items: center;
   padding: 2rem 0;
 }
@@ -149,6 +154,7 @@ body {
 
 .gallery {
   padding-left: 150px;
+  padding-bottom: 1rem;
 }
 
 /* carousel */
@@ -158,6 +164,7 @@ body {
 
 .carousel-item {
   margin-right: 10%;
+  min-width: 200px !important;
 }
 
 .carousel-item img {
@@ -182,13 +189,17 @@ li {
 }
 
 .navbar {
+  position: absolute;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   display: flex;
   padding: 10px 40px;
+  box-sizing: border-box;
 }
 
 .nav-menu {
+  flex: 1;
   color: white;
   display: flex;
   justify-content: space-evenly;
@@ -249,4 +260,23 @@ footer {
   font-size: 14px;
   font-weight: 600px;
   padding-bottom: 10px;
+}
+
+@media screen and (max-width: 1280px) {
+  .home .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header .title {
+    text-align: center;
+  }
+
+  .home .body .card {
+    justify-content: center;
+  }
+
+  .home .body .card .content {
+    width: 80%;
+  }
 }

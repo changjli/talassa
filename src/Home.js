@@ -63,7 +63,7 @@ const Home = () => {
                     </div>
                 </div>
                 <div class="right-content">
-                    <img src="./Assets/Logo.png" alt="" />
+                    <img src="assets/images/Logo.svg" alt="" />
                 </div>
             </div>
             <div className="body">
