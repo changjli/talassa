@@ -1,4 +1,5 @@
 import MyCarousel from "./MyCarousel";
+import './Home.css';
 
 const Home = () => {
     const images1 = [
