@@ -43,6 +43,19 @@ a {
     max-width: 160px;
     max-height: 82px;
   }
+
+  .hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: white;
+}
   
   .Head-container{
     background-image: url("Asset/image7.png");
@@ -70,7 +83,7 @@ a {
     text-align: justify;
     gap: 30px;
     font-size: 23px;
-    font-weight: 700px;
+    font-weight: 700;
     padding-top: 60px;
   }
 /* mid-content */
@@ -95,7 +108,7 @@ a {
   }
 
   .mid-container h2{
-    font-weight: 700px;
+    font-weight: 700;
     font-size: 36px;
   }
 
@@ -140,12 +153,12 @@ a {
   }
 
   .collab h5{
-    font-weight: 700px;
+    font-weight: 700;
     font-size: 30px;
   }
 
   .collab p{
-    font-weight: 700px;
+    font-weight: 700;
     font-size: 16px;
     text-align: justify;
   }
@@ -179,13 +192,13 @@ a {
   scroll-snap-align: start;
 } 
 .last-container h2{
-  font-weight: 700px;
+  font-weight: 700;
   font-size: 36px;
 }
 .last-container p{
     text-align: justify;
     font-size: 23px;
-    font-weight: 700px;
+    font-weight: 700;
     margin: 30px;
 }
 .wave{
@@ -231,7 +244,7 @@ a {
   
   .contact div {
     color: #8E3920;
-    font-weight: 700px;
+    font-weight: 700;
     font-size: 20px;
   }
   
@@ -243,6 +256,57 @@ a {
   .Talassa {
     color: #8E3920;
     font-size: 14px;
-    font-weight: 600px;
+    font-weight: 600;
     padding-bottom: 10px;
   }
+
+  @media (max-width: 1000px) {
+    .hamburger{
+        display: block;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.hamburger.active .bar:first-child{
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.hamburger.active .bar:last-child{
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 0;
+        flex-direction: column;
+        background-color: #282828;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-item{
+      margin: 15px 0;
+    }
+
+    .nav-menu.active{
+        left: 0;
+    }
+    .collaboration{
+      flex-direction: column;
+    }
+
+    section img{
+      width: 500px;
+      height: 250px;
+    }
+
+    .contact{
+      gap: 10px;
+      
+    }
+
+    .contact div {
+      font-size: 15px;
+    }
+}

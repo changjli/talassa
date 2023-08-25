@@ -57,6 +57,7 @@ form .field1 select{
     border-radius: 10px;
     min-height: 54px;
     min-width: 600px;
+    outline: none;
 }
 
 form .field2{
@@ -71,6 +72,7 @@ form .field2 select{
     border-radius: 10px;
     min-height: 54px;
     min-width: 280px;
+    outline: none;
 }
 
 form .field3{
@@ -85,6 +87,7 @@ form .field3 select{
     border-radius: 10px;
     min-height: 54px;
     min-width: 280px;
+    outline: none;
 }
 
 form .notes{
@@ -199,4 +202,5 @@ form .notes li{
     min-height: 200px; 
     background-color: rgba(235, 235, 235, 0.3);
     border: none;
+    outline: none;
 }
