@@ -1,25 +1,29 @@
+import { useState } from 'react';
 import './AboutUs.css'
 
+// const hamburger = document.querySelector(".hamburger");
+// const navMenu = document.querySelector(".nav-menu");
+
+// hamburger.addEventListener("click", () => {
+//     hamburger.classList.toggle("active");
+//     navMenu.classList.toggle("active");
+// })
+
+// document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+//     hamburger.classList.remove("active");
+//     navMenu.classList.remove("active")
+// }))
+
 const AboutUs = () => {
-    // const hamburger = document.querySelector(".hamburger");
-    // const navMenu = document.querySelector(".nav-menu");
 
-    // hamburger.addEventListener("click", () => {
-    //     hamburger.classList.toggle("active");
-    //     navMenu.classList.toggle("active");
-    // })
-
-    // document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
-    //     hamburger.classList.remove("active");
-    //     navMenu.classList.remove("active")
-    // }))
+    const [show, setShow] = useState(false);
 
     return (
         <div className="about-us">
             <div className="Head-container">
                 <nav className="navbar">
                     <img src="Asset/Logo.svg" alt="" className="Logo" />
-                    <ul className="nav-menu">
+                    <ul className={`nav-menu ${show && 'active'}`}>
                         <li className="nav-item">
                             <a href="#" className="nav-link">
                                 Home
@@ -41,7 +45,13 @@ const AboutUs = () => {
                             </a>
                         </li>
                     </ul>
-                    <div className="hamburger">
+                    <div className={`hamburger ${show && 'active'}`} onClick={() => {
+                        if (show) {
+                            setShow(false);
+                        } else {
+                            setShow(true);
+                        }
+                    }}>
                         <span className="bar" />
                         <span className="bar" />
                         <span className="bar" />
