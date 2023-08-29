@@ -1,5 +1,3 @@
-import './reservation.css';
-
 const Reservation3 = () => {
     return (
         <div className="Reservation">

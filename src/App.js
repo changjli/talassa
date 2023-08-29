@@ -1,5 +1,6 @@
-import AboutUs from './AboutUs';
 import './App.css';
+import './css/index.css';
+import AboutUs from './AboutUs';
 import Footer from './Footer';
 import Home from './Home';
 import Navbar from './Navbar';
@@ -13,7 +14,7 @@ function App() {
     <div className="App">
       <div className="container">
         <BrowserRouter>
-          {/* <Navbar /> */}
+          <Navbar />
           <Routes>
             <Route exact path='/home' element={<Home />}></Route>
             <Route exact path='/about' element={<AboutUs />} />

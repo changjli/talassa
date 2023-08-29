@@ -1,5 +1,4 @@
 import MyCarousel from "./MyCarousel";
-import './Home.css';
 
 const Home = () => {
     const images1 = [
@@ -66,6 +65,9 @@ const Home = () => {
                 <div class="right-content">
                     <img src="assets/images/Logo.svg" alt="" />
                 </div>
+            </div>
+            <div className="stickyBanner">
+                <img src="assets/images/Header - After Scroll.png" />
             </div>
             <div className="body">
                 <div className="card">

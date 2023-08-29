@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import './AboutUs.css'
 
 // const hamburger = document.querySelector(".hamburger");
 // const navMenu = document.querySelector(".nav-menu");
@@ -21,44 +20,8 @@ const AboutUs = () => {
     return (
         <div className="about-us">
             <div className="Head-container">
-                <nav className="navbar">
-                    <img src="Asset/Logo.svg" alt="" className="Logo" />
-                    <ul className={`nav-menu ${show && 'active'}`}>
-                        <li className="nav-item">
-                            <a href="#" className="nav-link">
-                                Home
-                            </a>
-                        </li>
-                        <li className="nav-item">
-                            <a href="#" className="nav-link">
-                                Group
-                            </a>
-                        </li>
-                        <li className="nav-item">
-                            <a href="#" className="nav-link">
-                                About Us
-                            </a>
-                        </li>
-                        <li className="nav-item">
-                            <a href="#" className="nav-link">
-                                Support
-                            </a>
-                        </li>
-                    </ul>
-                    <div className={`hamburger ${show && 'active'}`} onClick={() => {
-                        if (show) {
-                            setShow(false);
-                        } else {
-                            setShow(true);
-                        }
-                    }}>
-                        <span className="bar" />
-                        <span className="bar" />
-                        <span className="bar" />
-                    </div>
-                </nav>
                 <section>
-                    <img src="Asset/Logo.svg" alt="" />
+                    <img src="assets/images/Logo (1).svg" alt="" />
                     <div className="AboutTalassa">
                         <p>
                             Talassa Jakarta, a fruit-themed restaurant collaboration between GIOI,
@@ -77,14 +40,14 @@ const AboutUs = () => {
                 </section>
             </div>
             <div className="stickyBanner">
-                <img src="Asset/Header - After Scroll.svg" />
+                <img src="assets/images/Header - After Scroll.png" />
             </div>
             <div className="mid-container">
                 <h2>Our collaboration</h2>
                 <div className="collaboration">
                     <div className="collab">
                         <div className="collabLogo1">
-                            <img src="Asset/Gioi.png" />
+                            <img src="assets/images/Group 30.png" />
                         </div>
                         <h5>Gioi Jakarta</h5>
                         <p>
@@ -95,7 +58,7 @@ const AboutUs = () => {
                     </div>
                     <div className="collab">
                         <div className="collabLogo2">
-                            <img src="Asset/Phinisi.png" alt="" />
+                            <img src="assets/images/Frame 6.png" alt="" />
                         </div>
                         <h5>Jakarta Phinisi</h5>
                         <p>
@@ -106,7 +69,7 @@ const AboutUs = () => {
                     </div>
                     <div className="collab">
                         <div className="collabLogo3">
-                            <img src="Asset/Agungsedayu.png" />
+                            <img src="assets/images/Group 32.png" />
                         </div>
                         <h5>Agung Sedayu Group</h5>
                         <p>
@@ -136,30 +99,8 @@ const AboutUs = () => {
                 </p>
             </div>
             <div className="wave">
-                <img src="Asset/wAVE.png" />
+                <img src="assets/images/wAVE.png" />
             </div>
-            <footer>
-                <div className="socialMedia">
-                    <img src="Asset/Line.png" alt="" />
-                    <img src="Asset/Facebook.png" alt="" />
-                    <img src="Asset/twitter.png" alt="" />
-                    <img src="Asset/Instagram.png" alt="" />
-                    <img src="Asset/Whatsapp.png" alt="" />
-                </div>
-                <img src="Asset/Logo2.png" alt="" className="Logo2" />
-                <div className="contact">
-                    <div>FAQS</div>
-                    <div>|</div>
-                    <div>MEDIA</div>
-                    <div>|</div>
-                    <div>PROMOTIONS</div>
-                    <div>|</div>
-                    <div>CAREERS</div>
-                    <div>|</div>
-                    <div>CONTACT</div>
-                </div>
-                <p className="Talassa">© 2023 Talassa Group. All rights reserved.</p>
-            </footer>
         </div>
     );
 }

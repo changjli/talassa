@@ -1,5 +1,3 @@
-import './reservation.css'
-
 const Reservation1 = () => {
     return (
         <div className="Reservation">
@@ -8,23 +6,23 @@ const Reservation1 = () => {
                     <img src="Asset/keyboard_backspace.png" alt="" />
                     <p>RESERVATION</p>
                 </div>
+                <section className="step-bar">
+                    <ul className="step-bar-list">
+                        <li className="step-bar-item">
+                            <span className="progress-count">1</span>
+                            <span className="progess-label">Information</span>
+                        </li>
+                        <li className="step-bar-item">
+                            <span className="progress-count">2</span>
+                            <span className="progess-label">Booking</span>
+                        </li>
+                        <li className="step-bar-item">
+                            <span className="progress-count">3</span>
+                            <span className="progess-label">Confirmation</span>
+                        </li>
+                    </ul>
+                </section>
             </div>
-            <section className="step-bar">
-                <ul className="step-bar-list">
-                    <li className="step-bar-item">
-                        <span className="progress-count">1</span>
-                        <span className="progess-label">Information</span>
-                    </li>
-                    <li className="step-bar-item">
-                        <span className="progress-count">2</span>
-                        <span className="progess-label">Booking</span>
-                    </li>
-                    <li className="step-bar-item">
-                        <span className="progress-count">3</span>
-                        <span className="progess-label">Confirmation</span>
-                    </li>
-                </ul>
-            </section>
             <form action="#">
                 <div className="field1">
                     <select>
