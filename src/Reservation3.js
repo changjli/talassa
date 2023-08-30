@@ -59,7 +59,7 @@ const Reservation3 = () => {
                 </div>
                 <div className="specialRequest">
                     <p>Special Request/Notes</p>
-                    <input type="text" placeholder=" Write your request or notes to us" />
+                    <textarea type="text" placeholder=" Write your request or notes to us" />
                 </div>
                 <div className="checkbox">
                     <input type="checkbox" id="agreement" />
