@@ -183,7 +183,7 @@
     .header .button .reserv {
         margin-bottom: 20px;
         background-color: #008093;
-        // background: #008093 url("/src/Asset/");
+        background: #008093 url("/src/Asset/Design_Button.png");
         background-repeat: no-repeat;
         background-position: bottom;
     }
@@ -258,16 +258,15 @@
 
     .gallery {
         font-family: roboto;
-        padding-left: 150px;
         padding-bottom: 1rem;
         color: #00C4FF;
 
         p {
-            font-size: 20;
+            font-size: 20px;
         }
 
         h1 {
-            font-size: 40;
+            font-size: 40px;
         }
     }
 
@@ -307,6 +306,19 @@
 
 .about-us {
     @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+    .my-carousel {
+        margin: 3rem 0;
+    }
+
+    .carousel-item {
+        margin-right: 10%;
+        min-width: 200px !important;
+    }
+
+    .carousel-item img {
+        height: 300px;
+    }
 
     * {
         margin: 0;
@@ -521,15 +533,6 @@
         margin: 30px;
     }
 
-    .wave {
-        background-color: #448498;
-        padding: 0;
-    }
-
-    .wave img {
-        width: 100%;
-    }
-
     /* footer */
     footer {
         // background-image: url("Asset/Footer.png");
@@ -654,8 +657,10 @@
     }
 
     background-image: url("/src/Asset/Background\ reservation\ 1.png");
+    background-size: cover;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     padding: 100px;
 
     .Reservationstep {
@@ -836,6 +841,97 @@
         background-color: rgba(235, 235, 235, 0.3);
         border: none;
         outline: none;
+    }
+
+    .left-content {
+        width: 26%;
+    }
+
+    .left-content .back-btn {
+        margin-bottom: 70px;
+        display: flex;
+        align-items: center;
+    }
+
+    .left-content .back-btn .img {
+        width: 50px;
+        height: 50px;
+        // background-image: url("./Assets/backarrow.png");
+        background-size: cover;
+    }
+
+    .left-content .back-btn span {
+        margin-left: 10px;
+        color: white;
+        font-size: 30px;
+        font-family: "roboto";
+        font-weight: 700;
+        letter-spacing: 1.5px;
+    }
+
+    .left-content .steps-btn {
+        margin-left: 32%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left-content .steps-btn .circle-btn {
+        display: flex;
+        align-items: center;
+    }
+
+    .line-pending {
+        margin-left: 16%;
+        width: 5px;
+        height: 60px;
+        background-color: black;
+    }
+
+    .line-done {
+        margin-left: 16%;
+        width: 5px;
+        height: 60px;
+        background-color: #ffffff;
+    }
+
+    .left-content .steps-btn .circle-btn .circle {
+        margin-right: 5%;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        font-size: 32px;
+        font-family: "roboto";
+        font-weight: 700;
+        text-align: center;
+        line-height: 75px;
+    }
+
+    .btn-done {
+        background-color: #1d2d50;
+        border: 5px solid black;
+        line-height: 100px;
+        text-align: center;
+    }
+
+    .btn-active {
+        background-color: #ffffff00;
+        border: 5px solid black;
+    }
+
+    .btn-pending {
+        background-color: #ffffff;
+        border: 5px solid #eeeeee;
+    }
+
+    .left-content .steps-btn .circle-btn span {
+        font-size: 20px;
+        font-family: "roboto";
+        font-weight: 700;
+    }
+
+    .left-content .steps-btn .circle-btn .circle img {
+        width: 50px;
+        height: 50px;
     }
 }
 
@@ -1484,6 +1580,7 @@
     /* footer */
     footer {
         background-image: url("/src/Asset/Footer.png");
+        background-size: contain;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1531,6 +1628,15 @@
         font-size: 14px;
         font-weight: 600;
         padding-bottom: 10px;
+    }
+
+    .wave {
+        background-color: #448498;
+    }
+
+    .wave img {
+        width: 100%;
+        transform: translateY(5px);
     }
 
     @media (max-width: 1000px) {

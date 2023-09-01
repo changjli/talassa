@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
 
@@ -6,27 +7,19 @@ const Navbar = () => {
 
     return (
         <nav className="navbar">
-            <img src="assets/images/Logo.svg" alt="" className="Logo" />
+            <img src={require('./Asset/Logo.svg').default} alt="" className="Logo" />
             <ul className={`nav-menu ${show && 'active'}`}>
                 <li className="nav-item">
-                    <a href="#" className="nav-link">
-                        Home
-                    </a>
+                    <Link to='/home' className="nav-link">Home</Link>
                 </li>
                 <li className="nav-item">
-                    <a href="#" className="nav-link">
-                        Group
-                    </a>
+                    <Link to='/group' className="nav-link">Group</Link>
                 </li>
                 <li className="nav-item">
-                    <a href="#" className="nav-link">
-                        About Us
-                    </a>
+                    <Link to='/about' className="nav-link">About</Link>
                 </li>
                 <li className="nav-item">
-                    <a href="#" className="nav-link">
-                        Support
-                    </a>
+                    <Link to='/support' className="nav-link">Support</Link>
                 </li>
             </ul>
             <div className={`hamburger ${show && 'active'}`} onClick={() => {

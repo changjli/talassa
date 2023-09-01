@@ -1,27 +1,31 @@
 import { useState } from 'react';
-
-// const hamburger = document.querySelector(".hamburger");
-// const navMenu = document.querySelector(".nav-menu");
-
-// hamburger.addEventListener("click", () => {
-//     hamburger.classList.toggle("active");
-//     navMenu.classList.toggle("active");
-// })
-
-// document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
-//     hamburger.classList.remove("active");
-//     navMenu.classList.remove("active")
-// }))
+import MyCarousel from './MyCarousel';
 
 const AboutUs = () => {
-
-    const [show, setShow] = useState(false);
+    const images1 = [
+        {
+            key: 'image1',
+            value: require("./Asset/Pict location 4.png")
+        },
+        {
+            key: 'image2',
+            value: require("./Asset/Pict location 5.png")
+        },
+        {
+            key: 'image3',
+            value: require("./Asset/Pict location 6.png")
+        },
+        {
+            key: 'image4',
+            value: require("./Asset/Picture 1.png")
+        },
+    ];
 
     return (
         <div className="about-us">
             <div className="Head-container">
                 <section>
-                    <img src="assets/images/Logo (1).svg" alt="" />
+                    <img src={require("./Asset/Logo (1).svg").default} alt="" />
                     <div className="AboutTalassa">
                         <p>
                             Talassa Jakarta, a fruit-themed restaurant collaboration between GIOI,
@@ -40,14 +44,14 @@ const AboutUs = () => {
                 </section>
             </div>
             <div className="stickyBanner">
-                <img src="assets/images/Header - After Scroll.png" />
+                <img src={require("./Asset/Header - After Scroll.svg").default} />
             </div>
             <div className="mid-container">
                 <h2>Our collaboration</h2>
                 <div className="collaboration">
                     <div className="collab">
                         <div className="collabLogo1">
-                            <img src="assets/images/Group 30.png" />
+                            <img src={require("./Asset/Group 30.png")} />
                         </div>
                         <h5>Gioi Jakarta</h5>
                         <p>
@@ -58,7 +62,7 @@ const AboutUs = () => {
                     </div>
                     <div className="collab">
                         <div className="collabLogo2">
-                            <img src="assets/images/Frame 6.png" alt="" />
+                            <img src={require("./Asset/Phinisi.png")} alt="" />
                         </div>
                         <h5>Jakarta Phinisi</h5>
                         <p>
@@ -69,7 +73,7 @@ const AboutUs = () => {
                     </div>
                     <div className="collab">
                         <div className="collabLogo3">
-                            <img src="assets/images/Group 32.png" />
+                            <img src={require("./Asset/Group 32.png")} />
                         </div>
                         <h5>Agung Sedayu Group</h5>
                         <p>
@@ -82,13 +86,7 @@ const AboutUs = () => {
             </div>
             <div className="last-container">
                 <h2>Our Gallery</h2>
-                <div className="gallery">
-                    <img src="Asset/Gallery1.png" />
-                    <img src="Asset/Gallery2.png" />
-                    <img src="Asset/Gallery3.png" />
-                    <img src="Asset/Gallery4.png" />
-                    <img src="Asset/Gallery5.png" />
-                </div>
+                <MyCarousel images={images1} />
                 <p>
                     Docked at Cove at Batavia in Pantai Indah Kapuk, Talassa started with a
                     simple question of “what can we do with the boat?” In came GIOI to present
@@ -97,9 +95,6 @@ const AboutUs = () => {
                     Group and Jakarta Phinisi—and a waterfront view, two things that are not
                     your everyday sight in the city.
                 </p>
-            </div>
-            <div className="wave">
-                <img src="assets/images/wAVE.png" />
             </div>
         </div>
     );

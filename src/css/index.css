@@ -155,6 +155,7 @@
 .home .header .button .reserv {
   margin-bottom: 20px;
   background-color: #008093;
+  background: #008093 url("/src/Asset/Design_Button.png");
   background-repeat: no-repeat;
   background-position: bottom;
 }
@@ -214,15 +215,14 @@
 }
 .home .gallery {
   font-family: roboto;
-  padding-left: 150px;
   padding-bottom: 1rem;
   color: #00C4FF;
 }
 .home .gallery p {
-  font-size: 20;
+  font-size: 20px;
 }
 .home .gallery h1 {
-  font-size: 40;
+  font-size: 40px;
 }
 .home .my-carousel {
   margin: 3rem 0;
@@ -255,6 +255,16 @@
   /* mid-content */
   /* last Container */
   /* footer */
+}
+.about-us .my-carousel {
+  margin: 3rem 0;
+}
+.about-us .carousel-item {
+  margin-right: 10%;
+  min-width: 200px !important;
+}
+.about-us .carousel-item img {
+  height: 300px;
 }
 .about-us * {
   margin: 0;
@@ -434,13 +444,6 @@
   font-weight: 700;
   margin: 30px;
 }
-.about-us .wave {
-  background-color: #448498;
-  padding: 0;
-}
-.about-us .wave img {
-  width: 100%;
-}
 .about-us footer {
   display: flex;
   flex-direction: column;
@@ -534,8 +537,10 @@
 .Reservation {
   @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
   background-image: url("/src/Asset/Background reservation 1.png");
+  background-size: cover;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   padding: 100px;
   /* reservation 3 */
 }
@@ -696,6 +701,82 @@
   background-color: rgba(235, 235, 235, 0.3);
   border: none;
   outline: none;
+}
+.Reservation .left-content {
+  width: 26%;
+}
+.Reservation .left-content .back-btn {
+  margin-bottom: 70px;
+  display: flex;
+  align-items: center;
+}
+.Reservation .left-content .back-btn .img {
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+}
+.Reservation .left-content .back-btn span {
+  margin-left: 10px;
+  color: white;
+  font-size: 30px;
+  font-family: "roboto";
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+.Reservation .left-content .steps-btn {
+  margin-left: 32%;
+  display: flex;
+  flex-direction: column;
+}
+.Reservation .left-content .steps-btn .circle-btn {
+  display: flex;
+  align-items: center;
+}
+.Reservation .line-pending {
+  margin-left: 16%;
+  width: 5px;
+  height: 60px;
+  background-color: black;
+}
+.Reservation .line-done {
+  margin-left: 16%;
+  width: 5px;
+  height: 60px;
+  background-color: #ffffff;
+}
+.Reservation .left-content .steps-btn .circle-btn .circle {
+  margin-right: 5%;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  font-size: 32px;
+  font-family: "roboto";
+  font-weight: 700;
+  text-align: center;
+  line-height: 75px;
+}
+.Reservation .btn-done {
+  background-color: #1d2d50;
+  border: 5px solid black;
+  line-height: 100px;
+  text-align: center;
+}
+.Reservation .btn-active {
+  background-color: rgba(255, 255, 255, 0);
+  border: 5px solid black;
+}
+.Reservation .btn-pending {
+  background-color: #ffffff;
+  border: 5px solid #eeeeee;
+}
+.Reservation .left-content .steps-btn .circle-btn span {
+  font-size: 20px;
+  font-family: "roboto";
+  font-weight: 700;
+}
+.Reservation .left-content .steps-btn .circle-btn .circle img {
+  width: 50px;
+  height: 50px;
 }
 
 .reservation-2 * {
@@ -1237,6 +1318,7 @@
 }
 .footer footer {
   background-image: url("/src/Asset/Footer.png");
+  background-size: contain;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1277,6 +1359,13 @@
   font-size: 14px;
   font-weight: 600;
   padding-bottom: 10px;
+}
+.footer .wave {
+  background-color: #448498;
+}
+.footer .wave img {
+  width: 100%;
+  transform: translateY(5px);
 }
 @media (max-width: 1000px) {
   .footer .hamburger {
